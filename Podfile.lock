@@ -1,0 +1,16 @@
+PODS:
+  - SRGNovelGameTexts (0.0.1)
+
+DEPENDENCIES:
+  - SRGNovelGameTexts
+
+SPEC REPOS:
+  trunk:
+    - SRGNovelGameTexts
+
+SPEC CHECKSUMS:
+  SRGNovelGameTexts: 295ab4e5ac412a1d86698e353e6371d39952d96e
+
+PODFILE CHECKSUM: b93f399175557549c2bd0878a704e8d2ef93cd38
+
+COCOAPODS: 1.10.0

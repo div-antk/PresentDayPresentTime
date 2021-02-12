@@ -1,0 +1,6 @@
+framework module Pods_PresentDayPresentTime {
+  umbrella header "Pods-PresentDayPresentTime-umbrella.h"
+
+  export *
+  module * { export * }
+}
