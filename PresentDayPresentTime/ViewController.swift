@@ -9,21 +9,41 @@ import UIKit
 import SRGNovelGameTexts
 
 class ViewController: UIViewController {
+    
+    let PresentDay = SRGNovelGameTexts()
+    let PresentTime = SRGNovelGameTexts()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let PdPtText = SRGNovelGameTexts()
-        PdPtText.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        PdPtText.textColor = UIColor.orange
-        self.view.addSubview(PdPtText)
+        // プレゼントデイ
+        PresentDay.frame = CGRect(x: 40, y: 300, width: 200, height: 100)
+        PresentDay.textColor = UIColor {_ in return #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)}
+        PresentDay.stringDisplaySpeed = 0.2
+        PresentDay.font = UIFont(name: "HiraginoSans-W7", size: 20)
         
-        PdPtText.setText("プレゼント・デイ。プレゼントタイム")
+        self.view.addSubview(PresentDay)
+        PresentDay.setText("プレゼント・デイ")
         
-        PdPtText.startDisplayingText()
+        // プレゼントタイム
+        PresentTime.frame = CGRect(x: 170, y: 360, width: 200, height: 100)
+        PresentTime.textColor = UIColor {_ in return #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)}
+        PresentTime.stringDisplaySpeed = 0.2
+        PresentTime.font = UIFont(name: "HiraginoSans-W7", size: 20)
+        
+        self.view.addSubview(PresentTime)
+        PresentTime.setText("プレゼント・タイム")
+        
     }
 
+    @IBAction func startButton(_ sender: Any) {
+        
+        PresentDay.startDisplayingText()
+        PresentTime.startDisplayingText()
 
+    }
+    
 }
 
