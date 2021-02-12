@@ -41,7 +41,9 @@ class ViewController: UIViewController {
     @IBAction func startButton(_ sender: Any) {
         
         PresentDay.startDisplayingText()
-        PresentTime.startDisplayingText()
+//        Thread.sleep(forTimeInterval: 1)
+        PresentDay.onAllTextDisplayed = PresentTime.startDisplayingText
+//        PresentTime.startDisplayingText()
 
     }
     
